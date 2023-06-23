@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-5</title>
+</head>
+<body>
+    <center>
+        <h2>DATALIST Tag ..!</h2>
+        <p>This tag  is used to provide complete feature on form element</p>
+    </center>
+    <hr>
+
+    <h2>This is the selection option tag..!</h2>
+    <select name="" id="">
+        <option value="">Rahul dravid</option>
+        <option value="">Kapil Dev</option>
+        <option value="">Sachin Tendulkar</option>
+        <option value="">Anil kumble</option>
+        <option value="">Saurav Ganguly</option>
+        <option value="">Virat kohli</option>
+        <option value="">Jadeja</option>
+        <option value="">Dhoni</option>
+        <option value="">srinath</option>
+        <option value="wwwwwwww"></option>
+    </select>
+
+    <h2>THis the DATALIST TAG..!</h2>
+
+    <input type="text" name="indplayer" id="indplayer" placeholder="Players" list="india" onkeyup="details()">
+    <datalist id="india">
+        <option >Rahul dravid</option>
+        <option >Kapil Dev</option>
+        <option >Sachin Tendulkar</option>
+        <option >Anil kumble</option>
+        <option >Saurav Ganguly</option>
+        <option >Virat kohli</option>
+        <option >Jadeja</option>
+        <option >Dhoni</option>
+        <option >srinath</option>
+        <option value="wwwwwwww"></option>
+        <option value="Azarruddin"></option>
+        <option value="kumar">kumar</option>
+    </datalist> 
+
+    <script>
+        function details(){
+            let x = document.getElementById("indplayer").value;
+            console.log(x)
+        }
+    </script>
+    
+</body>
+</html>
